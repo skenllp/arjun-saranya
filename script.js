@@ -1,5 +1,5 @@
 // =============================================
-//   ARJUN & SHARANYA WEDDING WEBSITE - script.js
+//   ARJUN & SARANYA WEDDING WEBSITE - script.js
 // =============================================
 
 let musicPlaying = false;
