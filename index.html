@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wedding Invitation | Arjun &amp; Sharanya</title>
+  <meta name="description" content="Join us for the wedding celebration of Arjun and Sharanya on 15th November 2026 at SNDP-648 Auditorium, Maravanthuruth, Vaikom." />
+
+  <!-- Open Graph / WhatsApp / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Wedding Invitation | Arjun &amp; Sharanya" />
+  <meta property="og:description" content="Join us for the wedding celebration of Arjun &amp; Sharanya on 15th November 2026 at SNDP-648 Auditorium, Maravanthuruth, Vaikom." />
+  <meta property="og:image" content="og.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:site_name" content="Arjun &amp; Sharanya Wedding" />
+ 
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Wedding Invitation | Arjun &amp; Sharanya" />
+  <meta name="twitter:description" content="Join us for the wedding celebration of Arjun &amp; Sharanya on 15th November 2026 at SNDP-648 Auditorium, Maravanthuruth, Vaikom." />
+  <meta name="twitter:image" content="og.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- WELCOME SCREEN -->
+  <div id="welcome-screen" class="welcome-screen">
+    <div class="welcome-bg-text">Welcome</div>
+    <div class="welcome-card">
+      <img src="gallery8.jpeg" alt="Arjun and Sharanya" class="welcome-img" />
+      <div class="welcome-overlay">
+        <p class="welcome-tag">WEDDING INVITATION</p>
+        <h1 class="welcome-names">Arjun<br/><span class="amp-sm">&amp;</span><br/>Sharanya</h1>
+        <div class="welcome-divider"></div>
+        <p class="welcome-subtitle">15 . 11 . 26</p>
+      </div>
+    </div>
+    <button class="open-btn" onclick="openInvitation()">OPEN INVITATION</button>
+  </div>
+
+  <!-- MAIN SITE -->
+  <div id="main-site" class="main-site hidden">
+
+    <!-- Floating buttons -->
+    <a href="tel:+919288111348" class="fab fab-whatsapp" title="Call">
+      <svg viewBox="0 0 24 24" fill="white" width="22" height="22"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+    </a>
+    <button class="fab fab-music" id="music-btn" onclick="toggleMusic()" title="Toggle Music">
+      <svg id="music-icon" viewBox="0 0 24 24" fill="white" width="20" height="20"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
+    </button>
+    <audio id="bg-music" loop preload="auto">
+      <source src="perfect.mp3" type="audio/mpeg" />
+    </audio>
+
+    <!-- HERO -->
+    <section class="hero-section">
+      <div class="hero-arch hero-arch-left">
+        <img src="gallery1.jpeg" alt="Couple" />
+      </div>
+      <div class="hero-center">
+        <p class="hero-verse">Shree Ganeshaya Namah</p>
+        <p class="hero-ref">WITH THE BLESSINGS OF OUR PARENTS</p>
+        <div class="gold-line"></div>
+        <h2 class="hero-groom">Arjun</h2>
+        <p class="hero-amp">&amp;</p>
+        <h2 class="hero-bride">Sharanya</h2>
+        <p class="hero-date">15 . 11 . 26</p>
+        <p class="hero-venue-name">SNDP-648 Auditorium, Vaikom</p>
+      </div>
+      <div class="hero-arch hero-arch-right">
+        <img src="gallery3.jpeg" alt="Couple" />
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="gallery-section">
+      <div class="gallery-wrap">
+        <div class="g-card g-rect">
+          <img src="gallery2.jpeg" alt="Couple" />
+        </div>
+        <div class="g-card g-arch">
+          <img src="gallery4.jpeg" alt="Couple" />
+        </div>
+        <div class="g-card g-arch">
+          <img src="gallery5.jpeg" alt="Couple" />
+        </div>
+        <div class="g-card g-rect">
+          <img src="gallery6.jpeg" alt="Couple" />
+        </div>
+        <div class="g-card g-arch">
+          <img src="gallery8.jpeg" alt="Couple" />
+        </div>
+      </div>
+    </section>
+
+    <!-- COUNTDOWN -->
+    <section class="countdown-section">
+      <h2 class="countdown-title">Counting Down to Forever</h2>
+      <div class="countdown-row">
+        <div class="cd-box"><span id="cd-days">00</span><p>DAYS</p></div>
+        <div class="cd-sep">:</div>
+        <div class="cd-box"><span id="cd-hours">00</span><p>HOURS</p></div>
+        <div class="cd-sep">:</div>
+        <div class="cd-box"><span id="cd-mins">00</span><p>MINUTES</p></div>
+        <div class="cd-sep">:</div>
+        <div class="cd-box"><span id="cd-secs">00</span><p>SECONDS</p></div>
+      </div>
+    </section>
+
+    <!-- THE BIG DAY -->
+    <section class="bigday-section">
+      <p class="section-tag">THE CELEBRATION</p>
+      <h2 class="bigday-heading">The Big Day</h2>
+      <div class="bigday-cards">
+        <div class="event-card">
+          <div class="event-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="26" height="26"><path d="M12 3l9 7H3l9-7zM5 10v11M9.5 10v11M14.5 10v11M19 10v11M3 21h18"/></svg>
+          </div>
+          <h3 class="event-title">Wedding Ceremony</h3>
+          <div class="event-row">
+            <svg class="ei-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            <span>SUNDAY, 15 NOVEMBER 2026</span>
+          </div>
+          <div class="event-row">
+            <svg class="ei-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span>11:25 AM – 12:00 PM</span>
+          </div>
+          <div class="event-row">
+            <svg class="ei-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>SNDP-648 Auditorium, Maravanthuruth, Vaikom</span>
+          </div>
+          <a href="https://www.google.com/maps/search/?api=1&query=SNDP-648+Auditorium+Maravanthuruth+Vaikom" target="_blank" rel="noopener" class="explore-btn">EXPLORE VENUE &#8594;</a>
+        </div>
+        <div class="event-card">
+          <div class="event-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="26" height="26"><path d="M3 13h18a9 9 0 0 1-18 0zM12 3c2 2.5 3 4 3 5.5a3 3 0 0 1-6 0c0-1.5 1-3 3-5.5z"/></svg>
+          </div>
+          <h3 class="event-title">Wedding Reception</h3>
+          <div class="event-row">
+            <svg class="ei-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            <span>SUNDAY, 15 NOVEMBER 2026</span>
+          </div>
+          <div class="event-row">
+            <svg class="ei-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span>06:00 PM – 09:00 PM</span>
+          </div>
+          <div class="event-row">
+            <svg class="ei-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>UIDAI Lake Resort, Vaikaprayar, Vaikom</span>
+          </div>
+          <a href="https://www.google.com/maps/search/?api=1&query=UIDAI+Lake+Resort+Vaikaprayar+Vaikom" target="_blank" rel="noopener" class="explore-btn">EXPLORE VENUE &#8594;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- COUPLE -->
+    <section class="couple-section">
+      <p class="section-tag">TWO HEARTS, ONE LOVE</p>
+      <h2 class="couple-heading">Meet the Couple</h2>
+      <div class="couple-row">
+        <div class="couple-card">
+          <div class="monogram">A</div>
+          <div class="sparkle"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 2l2.09 6.26L20 9.27l-4.91 4.77 1.18 6.73L12 17.27l-4.27 3.5 1.18-6.73L4 9.27l5.91-1.01z"/></svg></div>
+          <h3 class="c-name">Arjun</h3>
+          <p class="c-role">SON OF</p>
+          <p class="c-parents">Sajeev P. D. &amp; Baby Shyni</p>
+          <p class="c-address">Pathichira House, Akkarappadam P. O., Vaikom</p>
+          <p class="c-address c-phone"><a href="tel:+919288111348">9288111348</a></p>
+        </div>
+        <div class="infinity-sym">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" width="40" height="40"><path d="M12 12c-2-2.5-4-4-6-4a4 4 0 0 0 0 8c2 0 4-1.5 6-4zm0 0c2 2.5 4 4 6 4a4 4 0 0 0 0-8c-2 0-4 1.5-6 4z"/></svg>
+        </div>
+        <div class="couple-card">
+          <div class="monogram">S</div>
+          <div class="sparkle"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 2l2.09 6.26L20 9.27l-4.91 4.77 1.18 6.73L12 17.27l-4.27 3.5 1.18-6.73L4 9.27l5.91-1.01z"/></svg></div>
+          <h3 class="c-name">Sharanya</h3>
+          <p class="c-role">DAUGHTER OF</p>
+          <p class="c-parents">D. Chandrabhanu &amp; P. K. Balamani</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURE PHOTO -->
+    <section class="feature-section">
+      <img src="gallery7.jpeg" alt="Arjun and Sharanya" class="feature-img" style="object-position:center 46%" />
+      <div class="feature-overlay">
+        <h2 class="feat-names">Arjun &amp; Sharanya</h2>
+        <p class="feat-date">15th November 2026</p>
+      </div>
+    </section>
+
+    <!-- RSVP -->
+    <section class="rsvp-section">
+      <p class="section-tag">YOU ARE CORDIALLY INVITED</p>
+      <h2 class="rsvp-heading">Will you attend?</h2>
+      <p class="rsvp-sub">We would love to have you with us</p>
+      <div class="rsvp-btns">
+        <button class="rsvp-btn rsvp-yes" id="btn-yes" onclick="rsvpYes()">YES, I'LL BE THERE</button>
+        <button class="rsvp-btn rsvp-no" id="btn-no" onclick="rsvpNo()">SADLY, I CAN'T</button>
+      </div>
+      <div id="rsvp-msg" class="rsvp-msg hidden"></div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer-section">
+      <div class="footer-bg-text">Thank You</div>
+      <div class="footer-inner">
+        <h2 class="footer-names">Arjun &amp; Sharanya</h2>
+        <div class="gold-line short"></div>
+        <p class="footer-date">15 NOVEMBER 2026</p>
+        <p class="footer-quote">“With the blessings of our beloved parents, we cordially invite you to join us in celebrating our wedding and to bless us on this special occasion.”</p>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
